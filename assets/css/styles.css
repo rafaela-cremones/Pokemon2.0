@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+
+}
+
+.header {
+    background-color: #04afff;
+    padding: 5px;
+    text-align: center;
+}
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.freepik.com/vetores-gratis/fundo-azul-com-efeito-de-zoom-gradiente_23-2149762303.jpg");
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.pokemon-card a{
+    text-decoration: none;
+}
+
+.pokemon-card span {
+    font-size: 1em;
+    color: #ffbb00;
+    font-weight: bold;
+}
+
+.pokemon-card img{
+    width: 150px;
+    height: 150px;
+}
+
+.pokemon-card :hover {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.pokemon-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 620px;
+    color: #2b2b2b;
+    background: linear-gradient(#fafeff, #04e2ff);
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+}
+
+.pokemon-detail h3 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: large;
+}
+
+.pokemon-detail h4 {
+    color: #0044ff;
+    font-weight: bold;
+}
+
+.Descricao {
+    padding: 10px;
+    background-color: #b87cfd;
+    align-content: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 500px;
+    height: 150px;
+}
+
+.caracteristicas {
+    padding: 10px;
+    background-color: #ffbc04;
+    align-content: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 400px;
+    height: 150px;
+}
+
+.estatisticas {
+    padding: 10px;
+}
+
+.estatisticas img {
+    border-radius: 20px;
+}
+
+.tipo {
+    padding: 10px;
+    background-color: #f856c2;
+    align-content: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 200px;
+    height: 80px;
+}
+
+.fraquezas {
+    background-color: #04ff3a;
+    align-content: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 200px;
+    height: 80px;
+}
+
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffe600;
+    color: rgb(47, 0, 255);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .pokemon-card {
+        width: 100%;
+        position: static;
+        text-align: center;
+        display: block;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+}
